@@ -1,10 +1,12 @@
-    # 🤔 Problem Statements
+
+   # 🤔 Problem Statements
 <p align="right"><b>Assigned on:</b> 13-03-2026</p>
 
----
+
 
 ## Task 1
 ### Using ID
+'''
 1. Open Amazon
 2. Click on Update Location
 ---
@@ -31,3 +33,4 @@
 4. Click on 'Register Now'
 5. Fetch Page title
 ---
+'''

@@ -1,0 +1,8 @@
+Find elements returns a list of web elements all togteher
+
+GET ATTRIBUTE: it is used for some verification method
+
+buttons:
+is_displayed() -> is hidden or visible
+is_selected() -> is clickable or not at the moment
+is_enabled()
