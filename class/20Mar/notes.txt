@@ -1,0 +1,13 @@
+Dropdowns
+1. SELECT -> HTML <select>
+<select>
+    <option value="d"> Dance </option>
+    <option value="m"> Music </option>
+</select>
+This eg can be handled in 3 ways:
+1. select_by_visible_text
+2. select_by_index
+3. select_by_value
+In this also there's also single select and multi select
+
+2. CUSTOM -> can be of div, list can be handled like regular elements only
