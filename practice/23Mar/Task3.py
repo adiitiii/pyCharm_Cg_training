@@ -5,6 +5,7 @@ Open flipkart, scroll to last till footer click on myntra from new tab switch to
 click on shopsy,
 again then fetch all window IDs, title, url for all tabs opened
 
+NOTE: driver
 '''
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.by import By
@@ -29,16 +30,17 @@ myntra = driver.find_element(By.XPATH, '//a[text()="Myntra"]')
 actions.click(myntra).perform()
 sleep(2)
 
+driver.switch_to.window(driver.window_handles[1])
 print("After switching to myntra:  ", "Tab Name: ", driver.title, " Tab URL: ", driver.current_url, " Tab Opened: ", driver.current_window_handle)
 
 driver.switch_to.window(driver.window_handles[0])
-
 print("Coming back to flipkart from myntra:  ", "Tab Name: ", driver.title, " Tab URL: ", driver.current_url, " Tab Opened: ", driver.current_window_handle)
 
 cleartrip = driver.find_element(By.XPATH, '//a[text()="Cleartrip"]')
 actions.click(cleartrip).perform()
 sleep(2)
 
+driver.switch_to.window(driver.window_handles[1])
 print("After switching to cleartrip:  ", "Tab Name: ", driver.title, " Tab URL: ", driver.current_url, " Tab Opened: ", driver.current_window_handle)
 
 
