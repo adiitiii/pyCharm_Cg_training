@@ -23,9 +23,8 @@ driver.switch_to.new_window()
 driver.get('https://www.theodinproject.com/')
 print(f"Name: {driver.title}, URL : {driver.current_url}")
 
-for i in range(len(driver.window_handles)):
-    if i != 0:
-        driver.switch_to.window(driver.window_handles[i])
-        driver.close()
+cls = driver.window_handles
+for c in cls[1:]:
+    driver.switch_to.window(c)
+    driver.close()
 
-driver.switch_to.window(0)
